@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+bool frc(double n){
+return n!=static_cast<int>(n);
+}
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        long long n,k,m,d;
+        cin>>n>>k;
+        double c=n/(k+1);
+        if(static_cast<int>(c)==0){
+            cout<<n<<endl;
+        }
+        else{
+        if(frc(c)){
+             cout<<c<<endl;
+        }
+        else{
+            long long x=c;
+            m=x*k;
+            d=n-m;
+            cout<<d<<endl;
+        }
+        }
+    }
+return 0;
+}
