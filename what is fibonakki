@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        long long n;
+        cin>>n;
+        long long i=0,j=1,d=0;
+        while(j<=n){
+            if(j%2==0){
+                d+=j;
+            }
+            long long temp=j+i;
+            i=j;
+            j=temp;
+
+
+        }
+        cout<<d<<endl;
+    }
+return 0;
+}
